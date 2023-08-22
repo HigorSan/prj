@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <title>Neymar Jr</title>
+    <link rel="manifest" href="./manifest.webmanifest">
+    <meta charset="UTF-8" />
+    <meta content='yes' name='apple-mobile-web-app-capable' />
+    <meta content='yes' name='mobile-web-app-capable' />
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <meta name="theme-color" content="black">
+    <link rel="apple-touch-icon" href="assets/logos/icon-192x192-apple.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="titulo">
+    <h1>Neymar Jr</h1>
+    <img src="img/neymar.jpg">
+
+<br>
+    <h1>Informações pessoais</h1>
+    <p><strong>Nascimento:</strong> 5 de fevereiro de 1992, Mogi das Cruzes - SP</p>
+    <p><strong>Nome:</strong> Neymar da Silva Santos Júnior</p>
+    <p><strong>Idade:</strong> 31</p>
+    <p><strong>Peso:</strong> 68kg</p>
+    <p><strong>Altura:</strong> 1,75</p>
+    
+<br>    
+   
+
+    <ul>
+    <h2><Li>Sobre</Li></ul></h2>
+    <p>Neymar da Silva Santos Júnior é um futebolista brasileiro que atua como atacante. 
+    Atualmente joga pelo Al-Hilal e pela Seleção Brasileira. 
+    É considerado o principal futebolista brasileiro da atualidade e um dos melhores futebolistas do mundo.</p>
+<br>
+    <p><strong>Equipes atuais:</strong> Seleção Brasileira (#10 / Atacante),
+     Al-Hilal Saudi Football Club (#10 / Atacante), Brazil</p>
+    <p><strong>Salário:</strong> 40,8 milhões GBP (2022)</p> 
+<br>
+<footer>
+    <p>Copyright © 2023</p>
+    <p>Todos os direitos reservados</p>
+    <p>Contato: <a href="neyney:contato@example.com">contato@example.com</a></p>
+  </footer>    
+</div>
+
+</body>
+<script>
+
+    
+    document.addEventListener("DOMContentLoaded", function (event) {
+            if ('serviceWorker' in navigator) {
+                console.log('has serviceworker');
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('serviceWorker.js')
+                        .then((registration) => {
+                            console.log('Service worker registered.', registration);
+                        });
+                });
+            }
+            else {
+                console.log("Your browser not supports serviceWorkers");
+            }
+        });
+    
+    </script>
+    
+</html>
